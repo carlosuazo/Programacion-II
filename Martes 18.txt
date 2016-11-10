@@ -1,0 +1,105 @@
+#include <iostream>
+
+using namespace std;
+int numero;
+
+
+int main()
+{
+    cout << "Ingresar el dia de la semana en numero ";
+    cin >>numero;
+    switch (numero)
+    {
+    case 1:
+        cout<<" EL dia es Lunes ";
+        break;
+    case 2:
+        cout<<" EL dia es Martes ";
+        break;
+    case 3:
+        cout<<" EL dia es Miercoles ";
+        break;
+    case 4:
+        cout<<" EL dia es Jueves ";
+        break;
+    case 5:
+        cout<<" EL dia es Viernes ";
+        break;
+    case 6:
+        cout<<" EL dia es Sabado ";
+        break;
+    case 7:
+        cout<<" EL dia es Domingo ";
+        break;
+    default:
+        cout<<" Numero no valido ";
+    }
+
+
+
+}
+
+/////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+
+using namespace std;
+int horas,hn,he;
+int pagoneto;
+int pagoextra;
+int pagonormal;
+int pagobruto;
+int pagoporzonan;
+int pagoporzonae;
+int zona;
+
+
+
+
+int main()
+{
+    cout << "Ingresar el numero de horas trabajadas: ";
+    cin >>horas;
+    cout << "Ingresar la zona de trabajo ";
+    cin >>zona;
+    switch(zona)
+    {
+    case 1:
+        pagoporzonan = 150;
+        pagoporzonae = 170;
+        break;
+    case 2:
+        pagoporzonan = 170;
+        pagoporzonae = 185;
+        break;
+    case 3:
+        pagoporzonan = 185;
+        pagoporzonae = 200;
+        break;
+    default:
+        pagoporzonan = 0;
+        pagoporzonae = 0;
+        break;
+
+
+
+
+
+    }
+    if (horas>=40)
+        { 
+            hn = 40;
+            he = horas - 40;
+        }
+    else 
+        {
+            hn = horas;
+            he = 0;
+        }
+
+
+
+
+
+}
+

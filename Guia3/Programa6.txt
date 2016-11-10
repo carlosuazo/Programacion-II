@@ -1,0 +1,50 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include<iostream>
+
+using namespace std;
+
+char resp;
+int turno;
+int horas;
+int thoras;
+int total;
+int i;
+int mayor=0;
+
+int main()
+{
+    do
+    {
+        do
+        {
+           cout<<"Ingresar el turno 1,2,3... ";
+           cin>>turno;
+        }
+        while((turno!=1) && (turno!=2) && (turno!=3));
+        for(i=1;i<6;i++)
+        {
+            cout<<"Ingresar las horas trabajadas del dia "<<i<<": ";
+            cin>>horas;
+            thoras+=horas;
+        }
+        total=thoras*100;
+        cout<<"Turno ingresado : "<<turno<<endl;
+        cout<<"Total de horas trabajadas "<<thoras<<endl;
+        cout<<"Total a pagar: "<<total<<endl;
+        do
+        {
+            cout<<"Desea continuar ? ";
+            cin>>resp;
+        }
+        while((resp!='s') && (resp!='n'));
+    }
+    while(resp=='s');
+    if (mayor<total)
+        {
+            mayor=total;
+            cout<<"EL mejor pago fue: "<<mayor;
+        }
+
+
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int i,k;
+
+int main()
+{
+    for(k=1;k<6;k++)
+      {
+
+        for(i=1;i<k;i++)
+        {
+         cout<<i<<"\t";
+        }
+
+        cout<<i<<"\n";
+      }
+  }

@@ -1,0 +1,21 @@
+#include <iostream>
+#include <time.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+using namespace std;
+int numero;
+int main()
+{
+    srand(time(0));
+    numero = 1 + rand() % (200-1);
+    cout<<"Valor del numero "<<numero<<"\n";
+    if (numero<=60)
+        cout<<"Rango: 1-60 ";
+    else if ((numero>=61)&&(numero<=90))
+        cout<<"Rango: 61-90";
+    else if ((numero>=91)&&(numero<=160))
+        cout<<"Rango: 91-160";
+    else
+        cout<<"Rango: 161-200";
+}

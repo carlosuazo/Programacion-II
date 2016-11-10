@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+int cliente,cantidad;
+float precio,subtotal,total,descuento,td ;
+int main()
+{
+    cout << "Ingresar el tipo de cliente 1,2,3 ";
+    cin >> cliente ;
+    cout << "Ingresar el precio del producto ";
+    cin >> precio;
+    cout << "Ingresar la cantidad de producto ";
+    cin >> cantidad ;
+    switch(cliente)
+    {
+        case 1:
+        descuento = 0.07;
+        break;
+        case 2:
+        descuento = 0.08;
+        break;
+        case 3:
+        descuento = 0.10;
+        break;
+        default:
+        descuento = 1;
+        break;
+    }

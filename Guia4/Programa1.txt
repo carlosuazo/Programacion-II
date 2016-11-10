@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+int num;
+int c=1;
+int mayor=100;
+
+int main()
+{
+    cout << "Ingresar 10 numeros impares y mayores a 50" << endl;
+
+    do
+    {
+        do
+        {
+            cout<<"Ingrese el numero "<<c<<" ";
+            cin>>num;
+            if((num%2!=0) && (num>50))
+                c++;
+        }
+        while((num%2==0) && (num<50));
+        if (num>mayor)
+            mayor=num;
+        else
+            mayor=mayor;
+
+    }
+    while(c<11);
+    if (mayor>100)
+    cout<<"El numero mayor fue: "<<mayor;
+    else
+    cout<<"No hubieron numeros arriba de 100 ";
+}

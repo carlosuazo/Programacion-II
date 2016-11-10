@@ -1,0 +1,16 @@
+// Ingresar un numero y determinar  si es positivo o negativo
+#include <iostream>
+
+using namespace std;
+int num;
+int main()
+{
+    cout << "Ingresar un numero :  " ;
+    cin>> num;
+    if (num>0)
+        cout<< "Positivo ";
+    else if (num<0)
+        cout<< "Negativo";
+
+
+}

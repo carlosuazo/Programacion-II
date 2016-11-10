@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+int nota1,nota2,nota3,mn1,mn2;
+float prom;
+
+int main()
+{
+    cout << "Ingresar la primer nota: ";
+    cin >> nota1 ;
+    cout << "Ingresar la segunda nota: ";
+    cin >> nota2;
+    cout << "Ingresar la tercer nota: ";
+    cin >> nota3 ;
+
+    if ((nota1<nota2)&&(nota1<nota3))
+        {
+            prom = (nota2 + nota3)/2;
+            mn1 = nota2;
+            mn2 = nota3;
+        }
+    else if ((nota2<nota1)&&(nota2<nota3))
+        {
+            prom = (nota1 + nota3)/2;
+            mn1 = nota1;
+            mn2 = nota3;
+        }
+    else
+        {
+            prom = (nota1 + nota2)/2;
+            mn1 = nota1;
+            mn2 = nota2;
+        }
+    cout<<"Las mejores notas fueron: "<<mn1<<", "<<mn2<<endl;
+    cout<<"El promedio de las mejores notas es : "<<prom;
+}

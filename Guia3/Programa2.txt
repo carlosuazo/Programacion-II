@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+
+int y;
+int i;
+
+int main()
+{
+    cout<<"A continuacion se presentan los numeros primos entre 1-100 "<<endl;
+    for(i=2;i<101;i++)
+    {
+        int x=0;
+        for(y=1;y<i;y++)
+        {
+            if(i % y ==0)
+                x++;
+        }
+        if((x<=1) && (i!=1))
+            cout<<i<<endl;
+    }
+
+
+
+}

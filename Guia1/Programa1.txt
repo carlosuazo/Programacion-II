@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+int num1;
+int num2;
+int num3;
+float suma;
+float p1; //porcentaje 1
+float p2; //porcentaje 2
+float p3; //porcentaje3
+
+int main()
+{
+    cout << "Ingresar numero 1: ";
+    cin >>num1;
+    cout << "Ingresar numero 2: ";
+    cin >>num2;
+    cout << "Ingresar numero 3: ";
+    cin >>num3;
+
+    suma = num1 + num2 + num3;
+
+    p1 = (num1/suma)*100;
+    p2 = (num2/suma)*100;
+    p3 = (num3/suma)*100;
+    cout<< "La suma es: "<<suma<<"\n";
+    cout<< "El primer numero representa "<<p1<<"% de la suma "<<"\n";
+    cout<< "El segundo numero representa "<<p2<<"% de la suma "<<"\n";
+    cout<< "El tercer numero representa "<<p3<<"% de la suma "<<"\n";
+
+
+
+}

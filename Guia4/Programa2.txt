@@ -1,0 +1,57 @@
+#include <iostream>
+#include <time.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+
+using namespace std;
+char respuesta;
+int numero,i;
+float prom;
+int suma=0;
+int d=0,n=0;
+int mayor=1;
+
+int main()
+{
+    srand(time(0));
+    do
+    {
+        do
+        {
+
+          d=0;
+          numero = 1 + rand() % (500-1);
+
+          for(i=1;i<(numero+1);i++)
+             {
+                if(numero%i== 0 )
+                   d++;
+
+             }
+
+          _flushall;
+        }
+        while(d!=2);
+
+        suma+=numero;
+        n++;
+        prom=suma/n;
+
+        if(numero>mayor)
+            mayor=numero;
+        else
+            mayor=mayor;
+
+        cout<<"Numero generado: "<<numero<<endl;
+        cout<<"Desea continuar? ";
+        cin>>respuesta;
+        respuesta=toupper(respuesta);
+        _flushall;
+
+    }
+    while(respuesta!='N');
+    cout<<"Promedio de numeros generados: "<<prom<<endl;
+    cout<<"El numero mayor es: "<<mayor;
+
+}

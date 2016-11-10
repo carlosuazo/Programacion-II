@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+int temp;
+
+
+int main()
+{
+    cout << "Ingresar la temperatura actual: ";
+    cin >>temp;
+    if (temp>30)
+    cout << "El clima esta  caliente ";
+    else if (temp=<30)
+    cout << "El clima esta agradable ";
+
+
+
+}

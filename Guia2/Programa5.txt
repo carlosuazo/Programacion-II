@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+int nota,examen,acumulado;
+int main()
+{
+    cout << "Ingresar la nota acumulada ";
+    cin >> acumulado ;
+    cout << "Ingresar la nota de examen ";
+    cin >> examen;
+    nota = examen + acumulado ;
+    if ((nota>=57) && (nota<=59))
+        nota = 60;
+    else nota = nota;
+    cout << "La nota total es: "<<nota;
+}

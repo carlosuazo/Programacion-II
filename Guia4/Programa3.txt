@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+int numero;
+int tabla;
+int i,k;
+int main()
+{
+    cout<<" A continuacion se presentan las tablas de multiplicar del 1 al 5 "<<endl;
+
+    for(k=1;k<6;k++)
+      {
+
+        for(i=1;i<11;i++)
+        {
+        tabla = k * i;
+        cout<<k<<" X "<<i<<" = "<<tabla<<"\n";
+        }
+        cout<<"\n\n";
+      }
+
+
+  }

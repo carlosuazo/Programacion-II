@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+int numero1,numero2,numero3;
+
+int main()
+{
+    cout << "Ingresar el primer numero: ";
+    cin >> numero1 ;
+    cout << "Ingresar el segundo numero: ";
+    cin >> numero2;
+    cout << "Ingresar el tercer numero: ";
+    cin >> numero3 ;
+
+    if ((numero1>numero2)&&(numero1>numero3))
+        cout<<"El numero mayor es: "<<numero1;
+    else if ((numero2>numero1)&&(numero2>numero3))
+        cout<<"El numero mayor es: "<<numero2;
+    else
+        cout<<"El numero mayor es: "<<numero3;
+}

@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+int num1;
+int num2;
+int main()
+{
+    cout<<"Ingrese el primer numero: ";
+    cin >> num1;
+    cout<<"Ingrese el segundo numero: ";
+    cin >> num2;
+    if (num1>num2)
+    {
+       cout<<"Primer numero es: "<<num2<<endl;
+       cout<<"Segundo numero es: "<<num1<<endl;
+    }
+
+    else
+    {
+      cout<<"Primer numero es: "<<num1<<endl;
+      cout<<"Segundo numero es: "<<num2<<endl;
+    }
+
+
+}

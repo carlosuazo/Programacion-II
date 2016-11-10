@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int i,numero;
+   for (i=0;i<5;i++)
+   {
+       cout<<"Valor de la i"<<i<<endl;
+       cout<<"Ingresar un numero ";
+       cin>>numero;
+   }
+}

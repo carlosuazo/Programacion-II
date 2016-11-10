@@ -1,0 +1,93 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+
+using namespace std;
+struct empleado
+{
+    char nombre[30];
+    double pxh,pb,ihss,tp;
+    int turno,horas;
+};
+empleado emple;
+char resp;
+
+
+void ingreso(empleado &emple);
+double pagohoras(int turno);
+void calcular(empleado &emple);
+void presentar(empleado emple);
+char respuesta();
+int main()
+{
+    do
+    {
+        ingreso(emple);
+        emple.pxh = pagohoras(emple.turno);
+        calcular(emple);
+        presentar(emple);
+        resp=respuesta();
+    }
+    while(resp!='N');
+}
+char respuesta()
+{
+    char xresp;
+    do
+    {
+        cout<<"Desea continuar? ";
+        cin>>xresp;
+        _flushall();
+        xresp=toupper(xresp);
+    }
+    while((xresp!='N')&&(xresp!='S'));
+    return xresp;
+}
+void presentar(empleado emple)
+{
+    cout<<"Nombre "<<"\t"<<emple.nombre<<"\n";
+    cout<<"horas "<<"\t"<<emple.horas<<"\n";
+    cout<<"Turno"<<"\t"<<emple.turno<<"\n";
+    cout<<"Pago Horas "<<"\t"<<emple.pxh<<"\n";
+    cout<<"IHSS "<<"\t"<<emple.ihss<<"\n";
+    cout<<"Pago Bruto "<<"\t"<<emple.pb<<cout<<"Nombre "<<"\t"<<emple.nombre<<"\n";"\n";
+    cout<<"Total a pagar "<<"\t"<<emple.tp<<"\n";
+}
+void calcular(empleado &emple)
+{
+    emple.pb = emple.pxh*emple.horas;
+    if (emple.pb>7000)
+        emple.ihss=245;
+    else
+        emple.ihss=emple.pb*0.035;
+    emple.tp=emple.pb-emple.ihss;
+}
+double pagohoras(int turno)
+{
+    switch(turno)
+    {
+    case 1:
+        return 200;
+        break;
+    case 2:
+        return 250;
+        break;
+    default:
+        return 300;
+        break;
+    }
+}cout<<"Nombre "<<"\t"<<emple.nombre<<"\n";
+void ingreso(empleado &emple)
+{
+    cout<<"Nombre del empleado ";
+    cin.getline(emple.nombre,30);
+    cout<<"Horas trabajadas ";
+    cin>>emple.horas;
+    do
+    {
+        cout<<"Turno 1,2,3 ";
+        cin>>emple.turno;
+
+    }
+    while((emple.turno>=1)&&(emple.turno<=3));
+}

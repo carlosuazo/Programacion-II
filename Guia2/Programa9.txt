@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+int num1;
+int num2;
+int num3;
+int main()
+{
+    cout << "Ingresar el primer numero " ;
+    cin >> num1;
+    cout << "Ingresar el segundo numero " ;
+    cin >> num2;
+    cout << "Ingresar el tercer numero " ;
+    cin >> num3;
+    if ((num3>num2) && (num2>num1))
+        cout << "Orden ascendente ";
+    else
+        cout << "Orden aleatorio";
+
+
+
+
+    }

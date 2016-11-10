@@ -1,0 +1,28 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include<iostream>
+
+using namespace std;
+
+char resp;
+int numero;
+
+int main()
+{
+    do
+    {
+        do
+        {
+           cout<<"Ingrese un numero  ";
+           cin>>numero;
+           cout<<"Desea continuar ? ";
+           cin>>resp;
+        }
+        while((resp!='s') && (resp!='n'));
+    }
+    while(resp=='s');
+
+
+
+}
+
