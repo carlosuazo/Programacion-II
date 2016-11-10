@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int num,i;
+int fact=1;
+int main()
+{
+
+cout<<"Ingrese numero";
+cin>>num;
+
+for(i=1;i<num+1;i++)
+    {
+        fact=i*fact;
+    }
+cout<<"Factorial: "<<fact;
+
+
+}

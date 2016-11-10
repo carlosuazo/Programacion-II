@@ -1,0 +1,13 @@
+#include <iostream>
+#include <time.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+using namespace std;
+int numero;
+int main()
+{
+    srand(time(0));
+    numero = 1 + rand() % (100-1);
+    cout<<"Valor del numero "<<numero<<"\n";
+}
